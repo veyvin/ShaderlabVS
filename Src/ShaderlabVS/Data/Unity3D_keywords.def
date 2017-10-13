@@ -16,9 +16,438 @@
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
+{%
+	%$ Name = {surface} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {surfaceFunction} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {lightModel} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Standard} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Standard} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {SurfaceOutputStandard} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {StandardSpecular} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {SurfaceOutputStandardSpecular} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Lambert} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {BlinnPhong} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {alpha} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {alpha:auto} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {alpha:blend} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {alpha:fade} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {alpha:premul} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {alphatest:VariableName} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {keepalpha} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {decal:add} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {decal:blend} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {vertex:VertexFunction} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {finalcolor:ColorFunction} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {finalgbuffer:ColorFunction} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {finalgbuffer:ColorFunction} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
 
 {%
-	%$ Name = {include} $%
+	%$ Name = {addshadow} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {fullforwardshadows} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {tessellate:TessFunction} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+{%
+	%$ Name = {exclude_path:deferred} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {exclude_path:forward} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {exclude_path:prepass} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {noshadow} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {noshadow} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {novertexlights} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {nolightmap} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {nodynlightmap} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {nodirlightmap} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {nofog} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {nometa} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {noforwardadd} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {nolppv} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {noshadowmask} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {dualforward} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+
+{%
+	%$ Name = {viewDir} $%
+	%$ Description = {float3} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {screenPos} $%
+	%$ Description = {float4} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {ComputeGrabScreenPos} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {viewDir} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {worldRefl} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {worldNormal} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {worldRefl} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {INTERNAL_DATA} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {WorldReflectionVector} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {INTERNAL_DATA} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {WorldNormalVector} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+
+
+
+{%
+	%$ Name = {vertex} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {fragment} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {geometry} $%
+	%$ Description = {#pragma target 4.0} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {hull} $%
+	%$ Description = {#pragma target 5.0} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {domain} $%
+	%$ Description = {#pragma target 5.0} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {target} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {only_renderers} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {exclude_renderers} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {multi_compile} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {multi_compile_fwdbase} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {multi_compile_fwdadd} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {multi_compile_fwdadd_fullshadows} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {multi_compile_fog} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+
+{%
+	%$ Name = {enable_d3d11_debug_symbols} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {hardware_tier_variants} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+
+
+{%
+	%$ Name = {d3d9} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {d3d11} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {glcore} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {gles} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {gles3} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {metal} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {vulkan} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {d3d11_9x} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {xboxone} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {ps4} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {psp2} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {n3ds} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {wiiu} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+
+
+
+{%
+	%$ Name = {GLSLPROGRAM} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {ENDGLSL} $%
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
@@ -109,19 +538,35 @@
 
 {%
 	%$ Name = {Lighting} $%
-	%$ Description = {} $%
+	%$ Description = {On | Off} $%
 	%$ Format = {} $%
 %}
 
 
 {%
 	%$ Name = {SetTexture} $%
-	%$ Description = {} $%
+	%$ Description = {SetTexture textureProperty} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {Cull} $%
+	%$ Description = {Back | Front | Off} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {Back } $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Front} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Off} $%
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
@@ -134,49 +579,106 @@
 
 {%
 	%$ Name = {ZWrite} $%
+	%$ Description = {On | Off} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {On} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Off} $%
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {ZTest} $%
+	%$ Description = {Less | Greater | LEqual | GEqual | Equal | NotEqual | Always} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Less} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Greater} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {LEqual} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {GEqual} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Equal} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {NotEqual} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Always} $%
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {AlphaTest} $%
-	%$ Description = {} $%
+	%$ Description = {Less | Greater | LEqual | GEqual | Equal | NotEqual | Always} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {Blend} $%
-	%$ Description = {} $%
+	%$ Description = {Blend Off,Blend SrcFactor DstFactor,Blend SrcFactor DstFactor, SrcFactorA DstFactorA,BlendOp Op,BlendOp OpColor, OpAlpha} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {ColorMask} $%
-	%$ Description = {} $%
+	%$ Description = {ColorMask RGB | A | 0 | any combination of R, G, B, A} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {Offset} $%
+	%$ Description = {OffsetFactor, OffsetUnits} $%
+	%$ Format = {} $%
+%}
+
+{%
+	%$ Name = {OffsetFactor} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {OffsetUnits} $%
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {SeparateSpecular} $%
-	%$ Description = {} $%
+	%$ Description = {On | Off} $%
 	%$ Format = {} $%
 %}
 
 {%
 	%$ Name = {ColorMaterial} $%
-	%$ Description = {} $%
+	%$ Description = {ColorMaterial AmbientAndDiffuse | Emission} $%
 	%$ Format = {} $%
 %}
 
@@ -301,6 +803,12 @@
 %}
 
 {%
+	%$ Name = {Deferred} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+{%
 	%$ Name = {PrepassBase} $%
 	%$ Description = {} $%
 	%$ Format = {} $%
@@ -417,6 +925,115 @@
 
 {%
 	%$ Name = {ConstantColor} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+{%
+	%$ Name = {HLSLSupport.cginc} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {UnityShaderVariables.cginc} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {UnityCG.cginc} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {AutoLight.cginc} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {Lighting.cginc} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {TerrainEngine.cginc} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+
+
+{%
+	%$ Name = {FANCY_STUFF_OFF} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {FANCY_STUFF_ON} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {SIMPLE_SHADING} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {BETTER_SHADING} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {GOOD_SHADING} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {BEST_SHADING} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {FOO_ON} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {shader_feature} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {FANCY_STUFF} $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {[HideInInspector] } $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {[NoScaleOffset] } $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {[Normal] } $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {[HDR] } $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {[Gamma] } $%
+	%$ Description = {} $%
+	%$ Format = {} $%
+%}
+{%
+	%$ Name = {[PerRendererData] } $%
 	%$ Description = {} $%
 	%$ Format = {} $%
 %}

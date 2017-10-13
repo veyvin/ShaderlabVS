@@ -181,6 +181,86 @@
 	%$ Type = {} $%
 	%$ Value = {Cookie texture attched to light. Defined in AutoLight.cginc} $%	
 %}
+{%
+	%$ Name = {unity_4LightPosX0, unity_4LightPosY0, unity_4LightPosZ0} $%
+	%$ Type = {} $%
+	%$ Value = {(ForwardBase pass only) world space positions of first four non-important point lights.} $%	
+%}
+
+{%
+	%$ Name = {unity_4LightAtten0} $%
+	%$ Type = {} $%
+	%$ Value = {(ForwardBase pass only) attenuation factors of first four non-important point lights.} $%	
+%}
+{%
+	%$ Name = {unity_LightColor} $%
+	%$ Type = {} $%
+	%$ Value = {(ForwardBase pass only) colors of of first four non-important point lights.} $%	
+%}
+{%
+	%$ Name = {unity_LightPosition} $%
+	%$ Type = {} $%
+	%$ Value = {View-space light positions. (-direction,0) for directional lights; (position,1) for point/spot lights.} $%	
+%}
+{%
+	%$ Name = {unity_LightAtten} $%
+	%$ Type = {} $%
+	%$ Value = {Light attenuation factors. x is cos(spotAngle/2) or –1 for non-spot lights; y is 1/cos(spotAngle/4) or 1 for non-spot lights; z is quadratic attenuation; w is squared light range.} $%	
+%}
+{%
+	%$ Name = {unity_SpotDirection} $%
+	%$ Type = {} $%
+	%$ Value = {View-space spot light positions; (0,0,1,0) for non-spot lights.} $%	
+%}
+
+
+
+{%
+	%$ Name = {unity_AmbientSky} $%
+	%$ Type = {} $%
+	%$ Value = {Sky ambient lighting color in gradient ambient lighting case.} $%	
+%}
+{%
+	%$ Name = {unity_AmbientEquator} $%
+	%$ Type = {} $%
+	%$ Value = {Equator ambient lighting color in gradient ambient lighting case} $%	
+%}
+{%
+	%$ Name = {unity_AmbientGround} $%
+	%$ Type = {} $%
+	%$ Value = {Ground ambient lighting color in gradient ambient lighting case.} $%	
+%}
+{%
+	%$ Name = {UNITY_LIGHTMODEL_AMBIENT} $%
+	%$ Type = {} $%
+	%$ Value = {Ambient lighting color (sky color in gradient ambient case). Legacy variable.} $%	
+%}
+{%
+	%$ Name = {unity_FogColor} $%
+	%$ Type = {} $%
+	%$ Value = {Fog color.} $%	
+%}
+{%
+	%$ Name = {unity_FogParams} $%
+	%$ Type = {} $%
+	%$ Value = {Parameters for fog calculation: (density / sqrt(ln(2)), density / ln(2), –1/(end-start), end/(end-start)). x is useful for Exp2 fog mode, y for Exp mode, z and w for Linear mode.} $%	
+%}
+
+
+
+{%
+	%$ Name = {unity_LODFade} $%
+	%$ Type = {} $%
+	%$ Value = {Level-of-detail fade when using LODGroup. x is fade (0..1), y is fade quantized to 16 levels, z and w unused.} $%	
+%}
+
+
+
+
+
+
+
+
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------Various --------------------------------------------
@@ -221,3 +301,35 @@
 	%$ Type = {float4} $%
 	%$ Value = {x is the current render target width in pixels, y is the current render target height in pixels, z is 1.0 + 1.0/width and w is 1.0 + 1.0/height.} $%
 %}
+{%
+	%$ Name = {_ZBufferParams} $%
+	%$ Type = {float4} $%
+	%$ Value = {Used to linearize Z buffer values. x is (1-far/near), y is (far/near), z is (x/far) and w is (y/far).} $%
+%}
+
+{%
+	%$ Name = {unity_OrthoParams} $%
+	%$ Type = {float4} $%
+	%$ Value = {x is orthographic camera’s width, y is orthographic camera’s height, z is unused and w is 1.0 when camera is orthographic, 0.0 when perspective} $%
+%}
+
+{%
+	%$ Name = {unity_CameraProjection} $%
+	%$ Type = {float4} $%
+	%$ Value = {Camera’s projection matrix.} $%
+%}
+
+{%
+	%$ Name = {unity_CameraInvProjection} $%
+	%$ Type = {float4} $%
+	%$ Value = {Inverse of camera’s projection matrix.} $%
+%}
+
+{%
+	%$ Name = {unity_CameraWorldClipPlanes[6]} $%
+	%$ Type = {float4} $%
+	%$ Value = {Camera frustum plane world space equations, in this order: left, right, bottom, top, near, far.} $%
+%}
+
+
+

@@ -10,7 +10,7 @@
 
 {%
 	%$ Name = { Color } $%
-	%$ Description = {  } $%
+	%$ Description = { Color Color-value } $%
 %}
 
 {%

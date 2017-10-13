@@ -65,7 +65,11 @@
 	%$ Synopsis = {} $%
 	%$ Description = {Direct3D 9} $%
 %}
-
+{%
+	%$ Name = {SHADER_API_GLCORE} $%
+	%$ Synopsis = {} $%
+	%$ Description = {Desktop OpenGL "core" (GL 3/4)} $%
+%}
 {%
 	%$ Name = {SHADER_API_XBOX360} $%
 	%$ Synopsis = {} $%
@@ -91,6 +95,52 @@
 %}
 
 {%
+	%$ Name = {SHADER_API_METAL} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_API_XBOXONE} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_API_PSP2} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+
+{%
+	%$ Name = {UNITY_VERSION} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_API_WIIU} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_TARGET_GLSL} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_API_PS4} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_API_VULKAN} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_API_GLES3} $%
+	%$ Synopsis = {} $%
+	%$ Description = {OpenGL ES 3.0/3.1} $%
+%}
+{%
 	%$ Name = {SHADER_API_FLASH} $%
 	%$ Synopsis = {} $%
 	%$ Description = {Flash Stage3D} $%
@@ -108,6 +158,128 @@
 	%$ Description = {defined for SHADER_API_GLES when compiling for “mobile” platform (iOS/Android); and not defined when compiling for “desktop” (NativeClient).} $%
 %}
 
+
+
+{%
+	%$ Name = {SHADER_STAGE_VERTEX} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_STAGE_FRAGMENT} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_STAGE_DOMAIN} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_STAGE_HULL} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_STAGE_GEOMETRY} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {SHADER_STAGE_COMPUTE} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+
+
+{%
+	%$ Name = {UNITY_BRANCH} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_FLATTEN} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_NO_SCREENSPACE_SHADOWS} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_NO_LINEAR_COLORSPACE} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_NO_DXT5nm} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_FRAMEBUFFER_FETCH_AVAILABLE} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_USE_RGBA_FOR_POINT_SHADOWS} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+
+{%
+	%$ Name = {UNITY_VPOS_TYPE} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_NO_RGBM} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_REVERSED_Z} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+
+
+{%
+	%$ Name = {UNITY_DECLARE_TEX2D} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_DECLARE_TEX2D_NOSAMPLER} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_DECLARE_TEX2DARRAY} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_SAMPLE_TEX2D} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_SAMPLE_TEX2D_SAMPLER} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_SAMPLE_TEX2DARRAY} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
+{%
+	%$ Name = {UNITY_SAMPLE_TEX2DARRAY_LOD} $%
+	%$ Synopsis = {} $%
+	%$ Description = {} $%
+%}
 #-----------------------------Platform difference helpers -------------------#
 #------------------------------------------------------------------------------
 
@@ -320,4 +492,36 @@
 	%$ Name = { SPOT } $%
 	%$ Synopsis = {} $%
 	%$ Description = {} $%
+%}
+
+
+{%
+	%$ Name = { UNITY_TRANSFER_DEPTH } $%
+	%$ Synopsis = {} $%
+	%$ Description = {UNITY_TRANSFER_DEPTH(o)} $%
+%}
+{%
+	%$ Name = { UNITY_OUTPUT_DEPTH } $%
+	%$ Synopsis = {} $%
+	%$ Description = {UNITY_OUTPUT_DEPTH(i)} $%
+%}
+{%
+	%$ Name = { COMPUTE_EYEDEPTH } $%
+	%$ Synopsis = {} $%
+	%$ Description = {COMPUTE_EYEDEPTH(i)} $%
+%}
+{%
+	%$ Name = { DECODE_EYEDEPTH } $%
+	%$ Synopsis = {} $%
+	%$ Description = {DECODE_EYEDEPTH(i)} $%
+%}
+{%
+	%$ Name = { LinearEyeDepth } $%
+	%$ Synopsis = {} $%
+	%$ Description = {LinearEyeDepth(i)} $%
+%}
+{%
+	%$ Name = { Linear01Depth } $%
+	%$ Synopsis = {} $%
+	%$ Description = {Linear01Depth(i)} $%
 %}

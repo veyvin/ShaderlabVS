@@ -17,3 +17,131 @@
 	%$ Description = { Unpack normal from texture. } $%
 %}
 
+{%
+	%$ Name = { UnityObjectToClipPos } $%
+	%$ Synopsis = {
+		UnityObjectToClipPos(float3 pos);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { UnityObjectToViewPos } $%
+	%$ Synopsis = {
+		UnityObjectToViewPos(float3 pos);
+	} $%
+	%$ Description = { } $%
+%}
+
+{%
+	%$ Name = { WorldSpaceViewDir } $%
+	%$ Synopsis = {
+		WorldSpaceViewDir (float4 v);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { ObjSpaceViewDir } $%
+	%$ Synopsis = {
+		ObjSpaceViewDir (float4 v);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { ParallaxOffset } $%
+	%$ Synopsis = {
+		ParallaxOffset (half h, half height, half3 viewDir);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { Luminance } $%
+	%$ Synopsis = {
+		 Luminance (fixed3 c);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { DecodeLightmap } $%
+	%$ Synopsis = {
+		DecodeLightmap (fixed4 color);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { EncodeFloatRGBA } $%
+	%$ Synopsis = {
+		EncodeFloatRGBA (float v);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { DecodeFloatRGBA } $%
+	%$ Synopsis = {
+		DecodeFloatRGBA (float4 enc);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { EncodeFloatRG  } $%
+	%$ Synopsis = {
+		EncodeFloatRG (float v);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { DecodeFloatRG } $%
+	%$ Synopsis = {
+		DecodeFloatRG (float2 enc);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { EncodeViewNormalStereo } $%
+	%$ Synopsis = {
+		EncodeViewNormalStereo (float3 n);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { DecodeViewNormalStereo } $%
+	%$ Synopsis = {
+		DecodeViewNormalStereo (float4 enc4);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { ObjSpaceLightDir } $%
+	%$ Synopsis = {
+		ObjSpaceLightDir (float4 v);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { Shade4PointLights } $%
+	%$ Synopsis = {
+		Shade4PointLights (...);
+	} $%
+	%$ Description = { } $%
+%}
+
+{%
+	%$ Name = { ComputeScreenPos  } $%
+	%$ Synopsis = {
+		ComputeScreenPos (float4 clipPos);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { ComputeGrabScreenPos  } $%
+	%$ Synopsis = {
+		ComputeGrabScreenPos (float4 clipPos);
+	} $%
+	%$ Description = { } $%
+%}
+{%
+	%$ Name = { ShadeVertexLights  } $%
+	%$ Synopsis = {
+		ShadeVertexLights (float4 vertex, float3 normal);
+	} $%
+	%$ Description = { } $%
+%}
