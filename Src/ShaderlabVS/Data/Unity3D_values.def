@@ -181,11 +181,6 @@
 	%$ Type = {} $%
 	%$ Value = {Cookie texture attched to light. Defined in AutoLight.cginc} $%	
 %}
-{%
-	%$ Name = {unity_4LightPosX0, unity_4LightPosY0, unity_4LightPosZ0} $%
-	%$ Type = {} $%
-	%$ Value = {(ForwardBase pass only) world space positions of first four non-important point lights.} $%	
-%}
 
 {%
 	%$ Name = {unity_4LightAtten0} $%
